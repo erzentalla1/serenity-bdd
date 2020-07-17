@@ -17,8 +17,8 @@ public class LoginSteps extends ScenarioSteps {
     LoginPage loginPage;
 
     public void login(){
-        loginPage.getEmailInput().type("your@email.com");
-        loginPage.getPasswordInput().type("your.password");
+        loginPage.getNameInput().type("Arlind");
+        loginPage.getPasswordInput().type("12345");
         loginPage.getLoginButton().click();
     }
 }

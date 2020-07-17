@@ -15,14 +15,14 @@ import net.serenitybdd.core.pages.WebElementFacade;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class LoginPage extends AbstractPage {
 
-    @FindBy(id = "email")
-    WebElementFacade emailInput;
+    @FindBy(id = "name")
+    WebElementFacade nameInput;
 
-    @FindBy(id = "pass")
+    @FindBy(id = "password")
     WebElementFacade passwordInput;
 
-    public WebElementFacade getEmailInput() {
-        return emailInput;
+    public WebElementFacade getNameInput() {
+        return nameInput;
     }
 
     public WebElementFacade getPasswordInput() {
@@ -33,6 +33,6 @@ public class LoginPage extends AbstractPage {
         return loginButton;
     }
 
-    @FindBy(css = "[value=\"Log In\"]")
+    @FindBy(css = "[value=\"Login\"]")
     WebElementFacade loginButton;
 }
